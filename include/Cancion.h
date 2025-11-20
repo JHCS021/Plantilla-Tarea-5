@@ -18,7 +18,7 @@ class Cancion
         std::string GetTitulo(){ return _titulo; }
         void SetArtista(std::string artista) { _artista = artista; }
         std::string GetArtista(){ return _artista; }
-        void SetDuracion(tiempo &duracion) { _duracion = duracion; }
+        void SetDuracion(const tiempo &duracion) { _duracion = duracion; }
         tiempo GetDuracion(){ return _duracion; }
         void SetSiguiente(Cancion* siguiente) { _siguiente = siguiente; }
         Cancion* GetSiguiente() { return _siguiente; }
